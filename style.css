@@ -1,0 +1,168 @@
+body{
+  background-color: black;
+}
+
+p{
+font-family: 'Kiwi Maru', serif;
+font-weight: 300;
+text-size: 70px;
+  
+}
+
+h1{
+   text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 50px;
+}
+
+.hide{
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  text-aligh: center;
+  position: absolute;
+  margin: 0 auto;
+padding: 10px 20px;
+  border: 1px solid #644666;
+  font-size: 12px;
+}
+
+.a-txt{
+  top: 20%;
+  left: 60%;
+}
+
+.b-txt{
+  top: 30%;
+  left: 65%;
+}
+
+.c-txt{
+  top: 40%;
+  left: 20%;
+}
+.d-txt{
+  top: 35%;
+  left: 22%;
+}
+.e-txt{
+  top: 60%;
+  left: 35%;
+}
+.f-txt{
+  top: 70%;
+  left: 50%;
+}
+.g-txt{
+  top: 40%;
+  left: 80%;
+}
+.h-txt{
+  top: 72%;
+  left: 32%;
+}
+.i-txt{
+  top: 35%;
+  left: 15%;
+}
+.j-txt{
+  top: 50%;
+  left: 60%;
+}
+.k-txt{
+  top: 27%;
+  left: 32%;
+}
+.m-txt{
+  top: 40%;
+  left: 50%;
+}
+.l-txt{
+  top: 25%;
+  left: 80%;
+}
+.n-txt{
+  top: 23%;
+  left: 45%;
+}
+.o-txt{
+  top: 25%;
+  left: 45%;
+}
+.p-txt{
+  top: 34%;
+  left: 45%;
+}
+.q-txt{
+  top: 70%;
+  left: 45%;
+}
+.r-txt{
+  top: 30%;
+  left: 45%;
+}
+.s-txt{
+  top: 40%;
+  left: 70%;
+}
+.t-txt{
+  top: 45%;
+  left: 45%;
+}
+.u-txt{
+  top: 45%;
+  left: 45%;
+}
+.v-txt{
+  top: 43%;
+  left: 50%;
+}
+.isc-txt{
+  top: 24%;
+  left: 23%;
+}
+.marquee {
+   margin: 2rem 0;
+   font-size: 6vw;
+   overflow: hidden;
+   font-family: raleway, sans-serif;
+}
+
+.marquee--long { 
+   font-size: 1.25vw; 
+}
+
+.marquee span {   
+    display: inline-block;
+    white-space: nowrap;
+    color: #00ff22;
+    width: var(--tw);
+    text-shadow: var(--tw) 0 currentColor, 
+                 calc(var(--tw) * 2) 0 currentColor, 
+                 calc(var(--tw) * 3) 0 currentColor,
+                 calc(var(--tw) * 4) 0 currentColor;
+   
+    will-change: transform;
+    animation: marquee var(--ad) linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee span {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee span {
+    animation: none;
+    text-shadow: none;
+    width: auto;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+  }
+}
