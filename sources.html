@@ -1,0 +1,83 @@
+<div class="cards">
+
+    <ul class="list">
+      <li><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Википедия</a></li>
+      <li><a href="https://wiki3.railml.org/wiki/Main_Page">Wiki3</a></li>
+      <li><a href="https://www.yellowpages.uz/domeni_stran_mira">Yellow Pages</a></li>
+      <li><a href="https://www.reg.ru/domain/new/zonepedia">Энциклопедия доменных зон</a></li>
+      <li><a href="https://bankirsha.com/country.tld.html">Таблица национальных доменных зон</a></li>
+      <li><a href="https://habr.com/ru/company/regru/blog/282962/">Хабр - статья за домены</a></li>
+      <li><a href="https://mgimo.ru/upload/docs_3/Barinova_domains.pdf">PDF - "Национальные домены:
+  символы государственных границ и безграничных возможностей"</a></li>
+    </ul>
+  
+  </div>
+  <style>
+    .c-list {
+        counter-reset: list;
+        list-style-type: none;
+        color: black;
+      
+        li {
+          position: relative;
+          background-color: lighten(#00ff22, 30%);
+          padding: 0.5rem 2rem 0.5rem 1rem;
+        }
+      
+        li:before {
+          counter-increment: list;
+          content: counter(list);
+          position: absolute;
+          line-height: 2.5;
+          top: 50%;
+          left: -2rem;
+          transform: translateY(-50%);
+          width: 2rem;
+          height: 100%;
+          background: #00ff22;
+          text-align: center;
+          color: black;
+        }
+      }
+      
+      /* *********** */
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      li ~ li {
+        margin-top: 0.5rem;
+      }
+      
+      .c-wa-i {
+        --color: #4B7CB6;
+        --deg: 20deg;
+        color: var(--color);
+        position: relative;
+      }
+      
+      .c-wa-i::before,
+      .c-wa-i::after {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 100%;
+        background-color: var(--color);  
+        top: 0;
+      }
+      
+      .c-wa-i::before {
+        left: -1rem;
+        transform: rotate(calc(var(--deg) * -1));
+      }
+      .c-wa-i::after {
+        right: -1rem;
+        transform: rotate(var(--deg));
+      }
+      
+  </style>
